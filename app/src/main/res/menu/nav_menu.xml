@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_fragment"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/menu_home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/payments_fragment"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/menu_payments"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/qr_fragment"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/menu_qr"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/history_fragment"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/menu_history"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/more_fragment"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/menu_more"
+        app:showAsAction="ifRoom" />
+
+</menu>

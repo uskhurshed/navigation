@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Navigation Test</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_payments">Payments</string>
+    <string name="menu_history">History</string>
+    <string name="menu_more">Еще</string>
+    <string name="menu_qr">QR</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_pin">Login</string>
+</resources>

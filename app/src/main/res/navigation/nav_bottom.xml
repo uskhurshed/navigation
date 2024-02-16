@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom"
+    app:startDestination="@id/home_fragment">
+
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="tj.ntc.easyapps.fragments.main.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_HomeFragment_to_PaymentsFragment"
+            app:destination="@id/payments_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payments_fragment"
+        android:name="tj.ntc.easyapps.fragments.main.PaymentsFragment"
+        android:label="@string/menu_payments"
+        tools:layout="@layout/fragment_payments" >
+        <action
+            android:id="@+id/action_PaymentsFragment_to_QuickResponseFragment"
+            app:destination="@id/qr_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/qr_fragment"
+        android:name="tj.ntc.easyapps.fragments.main.QuickResponseFragment"
+        android:label="@string/menu_qr"
+        tools:layout="@layout/fragment_qr" >
+        <action
+            android:id="@+id/action_QuickResponseFragment_to_HistoryFragment"
+            app:destination="@id/history_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/history_fragment"
+        android:name="tj.ntc.easyapps.fragments.main.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_HistoryFragment_to_MoreFragment"
+            app:destination="@id/more_fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/more_fragment"
+        android:name="tj.ntc.easyapps.fragments.main.MoreFragment"
+        android:label="@string/menu_more"
+        tools:layout="@layout/fragment_more" />
+</navigation>
