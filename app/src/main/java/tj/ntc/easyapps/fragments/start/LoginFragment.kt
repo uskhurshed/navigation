@@ -21,8 +21,9 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         bindLogin.button.setOnClickListener {
-            findNavController().navigate(R.id.pin_fragment)
+            findNavController().navigate(R.id.action_LoginFragment_to_PinFragment)
         }
     }
 

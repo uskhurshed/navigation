@@ -3,9 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_bottom"
-    app:startDestination="@id/home_fragment">
+    app:startDestination="@id/login_fragment">
 
+    <!--start-->
 
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="tj.ntc.easyapps.fragments.start.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_PinFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/login_fragment"
+            app:destination="@id/pin_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pin_fragment"
+        android:name="tj.ntc.easyapps.fragments.start.PinFragment"
+        android:label="@string/menu_pin"
+        tools:layout="@layout/fragment_pin" >
+        <action
+            android:id="@+id/action_PinFragment_to_HomeFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/pin_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+
+    <!--bottom-->
     <fragment
         android:id="@+id/home_fragment"
         android:name="tj.ntc.easyapps.fragments.main.HomeFragment"
@@ -51,4 +78,6 @@
         android:name="tj.ntc.easyapps.fragments.main.MoreFragment"
         android:label="@string/menu_more"
         tools:layout="@layout/fragment_more" />
+
+
 </navigation>
